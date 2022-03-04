@@ -1,0 +1,164 @@
+body{
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+/* Header */
+header{
+    background-color: rgb(39, 59, 71); 
+    display: flex;   
+    justify-content: space-between;
+    margin: 0;
+    align-items: center;
+}
+header img{
+    margin-top: 3px;
+    display: block;
+    height: 40px;
+    margin-bottom: 5px;
+}
+header ul{
+    color: white;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    display: flex;
+    padding: 8px;
+    align-items: center;
+}
+header ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 5px 20px;
+    display: inline-block;
+    
+}
+.Sesion{
+    background-color: red;
+    border-radius: 5px;
+}
+.navLista{
+    border-right: 2px white solid;
+}
+/* Section */
+#lupita{
+    background-color: rgb(39, 59, 71);
+    border-radius: 2px;
+    height: 27px;
+}
+section div form button i{
+    color: white;
+}
+section div form{
+    text-align: right;
+    padding: 5px 0;
+}
+#formulariobusq{
+    height: 20px;
+}
+.portada{
+    background-color: #efefef;
+    margin: 0;
+}
+.contenedor{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#Arqui{
+    display: block;
+    width: 100%;
+}
+.articuloArqui{
+    position: relative;
+}
+.divArqui{
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    background: rgba(255,255, 255, 0.9);
+    width: 55%;
+    padding: 20px 30px;
+}
+.divArqui div{
+    margin: 0;
+}
+.bloq{
+    display: flex;
+    justify-content: space-between;
+}
+.itemm img{
+    display: block;
+    width: 100%;
+}
+.itemm{
+    width: calc(100%/3 - 20px);
+
+}
+.blog{
+    padding-top: 30px;    
+}
+.secundario{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.bloque{
+    padding-bottom: 15px;
+}
+/* Footer */
+footer{
+    text-align: center;
+    padding-bottom: 30px;
+}
+footer span{
+    color: rgba(0, 0, 0, .5);
+    margin-right: 15px;
+}
+footer a{
+    text-decoration: none;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    color: #4d4d4d;
+    background-color: #eaeaea;
+    margin-right: 10px;
+    display: inline-block;
+    margin-bottom: 8px;
+}
+.active{
+    background-color: transparent;
+    border: none;
+}
+.barra{
+    color: white;
+    font-size: 20px;
+    padding: 10px 15px;
+    display: none;
+    cursor: pointer;
+}
+
+/* Responsive design */
+@media only screen and (max-width: 992px){
+    header ul{
+        display: none;
+    }
+    .barra{
+        display: flex;
+        align-items: center;
+    }
+    .itemm{
+        width: calc(50% - 15px);
+    }
+}
+@media only screen and (max-width: 768px){
+    .divArqui{
+        position: unset;
+        width: 100%;
+        padding: 8px 15px;
+        box-sizing: border-box;
+    }
+}
+@media only screen and (max-width: 576px){
+    .itemm{
+        width: 100%;
+    }
+}
